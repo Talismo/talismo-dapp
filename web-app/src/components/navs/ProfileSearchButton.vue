@@ -7,7 +7,7 @@
     to="profile-search"
   >
     <v-icon color="text-primary"> mdi-account-outline </v-icon>
-    <span class="ml-1"> Profile Search </span>
+    <span class="ml-1"> Wallet Profiles</span>
   </v-btn>
 </template>
 
