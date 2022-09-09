@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
+    alias: "/home",
     name: "Home",
     component: Home,
   },
@@ -18,6 +19,36 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+  {
+    path: "/profile-search",
+    name: "Profile Search",
+    component: () =>
+      import(
+        /* webpackChunkName: "profile-search" */ "../views/publicViews/ProfileSearchView.vue"
+      ),
+  },
+  {
+    path: "/utility-search",
+    name: "Utility Search",
+    component: () =>
+      import(
+        /* webpackChunkName: "utility-search" */ "../views/publicViews/UtilitySearchView.vue"
+      ),
+  },
+  {
+    path: "/nft-search",
+    name: "NFT Search",
+    component: () =>
+      import(
+        /* webpackChunkName: "nft-search" */ "../views/publicViews/NftSearchView.vue"
+      ),
+  },
+  {
+    path: "*",
+    name: "NotFound",
+    component: () =>
+      import(/* webpackChunkName: "404" */ "../views/NotFound.vue"),
   },
 ];
 
