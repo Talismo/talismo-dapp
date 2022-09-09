@@ -25,7 +25,7 @@
 <script>
 import ProfileSearchButton from "./ProfileSearchButton.vue";
 import UtilitySearchButton from "./UtilitySearchButton.vue";
-import NftSearchButton from "./NftSearchButton copy.vue";
+import NftSearchButton from "./NftSearchButton.vue";
 
 export default {
   components: {
