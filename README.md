@@ -1,1 +1,1 @@
-# talismo-dapp
+# talismo.io - dapp
