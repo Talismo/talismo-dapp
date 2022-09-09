@@ -15,9 +15,7 @@
 </template>
 
 <script>
-export default {
-  props: ["margin-top", "margin-bottom"],
-};
+export default {};
 </script>
 
 <style></style>
