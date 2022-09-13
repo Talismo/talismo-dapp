@@ -7,13 +7,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func RequestHandler(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		log.Println(r.RequestURI)
-		next.ServeHTTP(w, r)
-	})
-}
-
 func ApiServer() {
 
 	var router = mux.NewRouter().StrictSlash(true)
