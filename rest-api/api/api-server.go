@@ -28,5 +28,6 @@ func ApiServer() {
 
 	log.Println("Listening on Port: 2409")
 
-	http.ListenAndServe(":2409", router)
+	err := http.ListenAndServe(":2409", router)
+	log.Fatal(err)
 }
