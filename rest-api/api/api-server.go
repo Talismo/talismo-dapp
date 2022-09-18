@@ -18,6 +18,8 @@ func ApiServer() {
 	resource.Use(RequestHandler)
 
 	resource.HandleFunc("/", ResourceIndex)
+	resource.HandleFunc("/wallet", ResourceWallet)
+	resource.HandleFunc("/wallets", ResourceWallets)
 
 	log.Println("Listening on Port: 2409")
 

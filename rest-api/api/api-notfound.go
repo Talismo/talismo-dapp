@@ -8,7 +8,7 @@ import (
 func ErrorNotFound(w http.ResponseWriter, r *http.Request) {
 	var errorNotFound *DefaultApiResponse = &DefaultApiResponse{
 		Status:  "404",
-		Message: "Welcome to Talismo, please double check your endpoint, ths is not it!",
+		Message: "Welcome to Talismo, please double check your endpoint, we are sure this is not it!",
 	}
 
 	jsonResponse, _ := json.Marshal(errorNotFound)
